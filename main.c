@@ -692,7 +692,7 @@ void app_main(void)
     printf("MAC Address for the device = %s \n",mac_json);                              //++ Get the MAC Address of the ESP
 
     wifi_init_sta();                                                                    //++ Call the Wifi Initializing Function
-    // ethernet_init_sta();                                                             //++ Call the Ethernet Initializing Function
+    ethernet_init_sta();                                                             //++ Call the Ethernet Initializing Function
 
     // MQTT TOPICS
     sprintf(data_topic, "%s/data", mac_json);                                           //++ Making TOPICS for MQTT
