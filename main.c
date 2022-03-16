@@ -59,8 +59,8 @@ char *TARGET_HOST = "www.google.com";                                   //++ Spe
 bool ping_stop_flag = false;                                            //++ Flag to execute entire ping process one in while loop
 
 //.............Wifi Declarations.....................
-#define EXAMPLE_WIFI_SSID             "J@RVI$"                          //++ Set up your AP SSID which ESP will connect with
-#define EXAMPLE_WIFI_PASS             "16436138"                      //++ Set up your AP PASSWORD which ESP will connect with
+#define EXAMPLE_WIFI_SSID             "<AP SSID>"                          //++ Set up your AP SSID which ESP will connect with
+#define EXAMPLE_WIFI_PASS             "<AP PASSWORD>"                      //++ Set up your AP PASSWORD which ESP will connect with
 #define EXAMPLE_MAXIMUM_RETRY         2                                 //++ Set the number of attempts ESP makes to connect the AP on boot
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT      BIT1
@@ -74,7 +74,7 @@ static const char *TAG_eth = "Ethernet";                                //++ TAG
 bool ethernet_connection_flag = false;                                  //++ To check whether ESP is connected to Ethernet Cable
 
 //.............MQTT Declarations.....................
-#define mqttbroker "mqtt://104.211.188.23:5131"                        //++ MQTT Broker
+#define mqttbroker "<MQTT BROKER URL>"                        //++ MQTT Broker
 
 char data_topic[50];                                                    //++ Name of MQTT TOPIC to publish data from ESP
 char cmd_topic[50];                                                     //++ Name of MQTT TOPIC to receive data on ESP
@@ -93,7 +93,7 @@ static const char *TAG_MQTT = "MQTT";                                   //++ TAG
 extern const uint8_t server_cert_pem_start[] asm("_binary_ca_cert_pem_start");
 extern const uint8_t server_cert_pem_end[] asm("_binary_ca_cert_pem_end");
 char Ota_Cmd[20] = "{\"START_OTA\"}";
-char Ota_Url[200] = "https://beta.alitersolutions.com/demo/images/OTA/enc28j60.bin";
+char Ota_Url[200] = "<URL FOR BIN FILE>";
 char string2[200];
 int count1 = 12;
 int count2 = 0;
