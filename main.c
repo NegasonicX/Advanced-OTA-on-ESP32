@@ -39,7 +39,11 @@
  * This code shows a basic logic to perform inter-task communication using multiple queues
  *
  * GPIO status:
- * GPIO2   : output ( built-in LED on Devkit V1 )
+ * GPIO 2  : Builtin LED ( Devkit V1 )
+ * GPIO 18 : SCLK
+ * GPIO 23 : MOSI
+ * GPIO 19 : MISO
+ * GPIO 5  : CS
  *
  */
 
